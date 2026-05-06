@@ -20,3 +20,17 @@ def create_table():
 
     conn.commit()
     conn.close()
+
+def insert_user(username, password_hash, salt):
+    conn = connect()
+    cursor = conn.cursor()
+
+    try:
+        cursor.execute("INSERT INTO users (username, password_hash, salt) VALUES (?, ?, ?)",
+                       (username, password_hash, salt))
+        conn.commit()
+        return True
+    except:
+        return False
+    finally:
+        conn.close()
