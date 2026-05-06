@@ -34,3 +34,13 @@ def insert_user(username, password_hash, salt):
         return False
     finally:
         conn.close()
+
+def get_user(username):
+    conn = connect()
+    cursor = conn.cursor()
+
+    cursor.execute("SELECT * FROM users WHERE username=?", (username,))
+    user = cursor.fetchone()
+
+    conn.close()
+    return user
