@@ -75,6 +75,10 @@ Tabela: `users`
 ## ▶️ Si të ekzekutohet projekti
 
 ```bash
+cd user_manager_app
+```
+
+```bash
 python main.py apo py main.py
 ```
 Aplikacioni do të hapet me GUI ku mund të:
@@ -88,13 +92,12 @@ Aplikacioni do të hapet me GUI ku mund të:
 ## 📁 Struktura e Projektit
 
 ```
-project/
+user_manager_app/
 │── main.py        # Starton aplikacionin
-│── db.py          # Menaxhon databazën (SQLite)
+│── database.py    # Menaxhon databazën (SQLite)
 │── security.py    # Hashing dhe salt
 │── ui.py          # GUI (Tkinter)
 │── users.db       # Databaza
-│── README.md
 ```
 
 ---
