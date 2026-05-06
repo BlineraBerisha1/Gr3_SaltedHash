@@ -1,5 +1,4 @@
 # Gr3_SaltedHash
-# User Management Application (Python, Tkinter, SQLite)
 
 Ky projekt është një aplikacion desktop i zhvilluar në **Python**, i cili përdor **Tkinter** për ndërfaqen grafike (GUI) dhe **SQLite** për menaxhimin e databazës. Qëllimi i aplikacionit është menaxhimi bazik i përdoruesve duke ofruar:
 
@@ -100,29 +99,10 @@ project/
 
 ---
 
-## ⚠️ Shënime
-
-* Ky projekt është realizuar për qëllime mësimore
-* Nuk përfshin mekanizma të avancuar si:
-
-  * session management
-  * mbrojtje nga brute-force
-  * validime të avancuara të password-it
-
----
-
-## 🚀 Përmirësime të mundshme
-
-* Përdorimi i **bcrypt** ose **PBKDF2** në vend të SHA-256
-* Shtimi i funksionaliteteve CRUD (Update/Delete user)
-* Përmirësimi i dizajnit të GUI
-* Shtimi i validimeve më të forta për input
-
----
-
 ## 👨‍💻 Autor
-*Blinera Berisha
-*Bliri Berisha 
-*Çiljeta Azemi 
-*Edison Ukshini
+
+* Blinera Berisha
+* Bliri Berisha
+* Çiljeta Azemi 
+* Edison Ukshini
 
