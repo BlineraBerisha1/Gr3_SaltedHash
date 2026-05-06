@@ -44,3 +44,13 @@ def get_user(username):
 
     conn.close()
     return user
+
+def get_all_users():
+    conn = connect()
+    cursor = conn.cursor()
+
+    cursor.execute("SELECT id, username FROM users")
+    users = cursor.fetchall()
+
+    conn.close()
+    return users
