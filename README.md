@@ -10,7 +10,7 @@ Fjalëkalimet nuk ruhen si tekst i thjeshtë, por si **Salted Hash** për të rr
 
 ---
 
-## ⚙️ Teknologjitë e përdorura
+## Teknologjitë e përdorura
 
 * Python
 * Tkinter (GUI)
@@ -19,7 +19,7 @@ Fjalëkalimet nuk ruhen si tekst i thjeshtë, por si **Salted Hash** për të rr
 
 ---
 
-## 🔐 Siguria e Fjalëkalimeve
+## Siguria e Fjalëkalimeve
 
 Për siguri, fjalëkalimet ruhen duke përdorur teknikën **Salted Hash**:
 
@@ -27,7 +27,7 @@ Për siguri, fjalëkalimet ruhen duke përdorur teknikën **Salted Hash**:
 * Password-i kombinohet me salt
 * Rezultati hash-ohet me **SHA-256**
 
-📌 Në databazë ruhen:
+ Në databazë ruhen:
 
 * username
 * password_hash
@@ -37,7 +37,7 @@ Kjo metodë parandalon ruajtjen e fjalëkalimeve në formë të lexueshme dhe e 
 
 ---
 
-## 🗄️ Struktura e Databazës
+## Struktura e Databazës
 
 Tabela: `users`
 
@@ -50,29 +50,29 @@ Tabela: `users`
 
 ---
 
-## 🖥️ Funksionalitetet
+## Funksionalitetet
 
-### ➕ Register (Krijimi i Userit)
+### Register (Krijimi i Userit)
 
 * Useri vendos username dhe password
 * Gjenerohet salt
 * Password hash-ohet
 * Ruhet në databazë
 
-### 🔑 Login (Autentifikimi)
+### Login (Autentifikimi)
 
 * Useri fut kredencialet
 * Merret salt nga databaza
 * Password hash-ohet përsëri
 * Krahasohet me hash-in ekzistues
 
-### 👥 Show Users
+### Show Users
 
 * Shfaq listën e userave (ID dhe username)
 
 ---
 
-## ▶️ Si të ekzekutohet projekti
+## Si të ekzekutohet projekti
 
 ```bash
 cd user_manager_app
@@ -89,7 +89,7 @@ Aplikacioni do të hapet me GUI ku mund të:
 
 ---
 
-## 📁 Struktura e Projektit
+## Struktura e Projektit
 
 ```
 user_manager_app/
@@ -102,7 +102,7 @@ user_manager_app/
 
 ---
 
-## 👨‍💻 Autor
+##  Autor
 
 * Blinera Berisha
 * Bliri Berisha
