@@ -96,8 +96,7 @@ class App:
         self.status.config(text="Duke u loguar...")
 
         self.root.after(300, lambda: self._do_login(username, password))
-
-        def _do_login(self, username, password):
+    def _do_login(self, username, password):
         user = get_user(username)
 
         if not user:
