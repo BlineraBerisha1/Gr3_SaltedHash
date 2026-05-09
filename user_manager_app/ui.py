@@ -96,3 +96,33 @@ class App:
         self.status.config(text="Duke u loguar...")
 
         self.root.after(300, lambda: self._do_login(username, password))
+
+        def _do_login(self, username, password):
+        user = get_user(username)
+
+        if not user:
+            self.status.config(text="User nuk ekziston", fg="red")
+            messagebox.showerror("Error", "User nuk ekziston")
+            self.set_loading(False)
+            return
+
+        _, _, stored_hash, salt = user
+
+        if hash_password(password, salt) == stored_hash:
+            self.status.config(text="Login i suksesshëm", fg="green")
+            messagebox.showinfo("Success", "Login OK")
+        else:
+            self.status.config(text="Password gabim", fg="red")
+            messagebox.showerror("Error", "Password gabim")
+
+        self.set_loading(False)
+
+    def show_users(self):
+        users = get_all_users()
+
+        if not users:
+            messagebox.showinfo("Users", "Nuk ka usera")
+            return
+
+        user_list = "\n".join([f"{u[0]} - {u[1]}" for u in users])
+        messagebox.showinfo("Users List", user_list)
