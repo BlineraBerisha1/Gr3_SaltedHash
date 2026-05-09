@@ -1,4 +1,3 @@
-
 import tkinter as tk
 from tkinter import messagebox
 from database import insert_user, get_user, get_all_users
