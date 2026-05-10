@@ -19,24 +19,6 @@ Fjalëkalimet nuk ruhen si tekst i thjeshtë, por si **Salted Hash** për të rr
 
 ---
 
-## Siguria e Fjalëkalimeve
-
-Për siguri, fjalëkalimet ruhen duke përdorur teknikën **Salted Hash**:
-
-* Gjenerohet një **salt** unik për çdo user
-* Password-i kombinohet me salt
-* Rezultati hash-ohet me **SHA-256**
-
- Në databazë ruhen:
-
-* username
-* password_hash
-* salt
-
-Kjo metodë parandalon ruajtjen e fjalëkalimeve në formë të lexueshme dhe e bën më të vështirë sulmet si brute-force.
-
----
-
 ## Struktura e Databazës
 
 Tabela: `users`
@@ -52,23 +34,11 @@ Tabela: `users`
 
 ## Funksionalitetet
 
-### Register (Krijimi i Userit)
+*Register (Krijimi i Userit)
 
-* Useri vendos username dhe password
-* Gjenerohet salt
-* Password hash-ohet
-* Ruhet në databazë
+*Login (Autentifikimi)
 
-### Login (Autentifikimi)
-
-* Useri fut kredencialet
-* Merret salt nga databaza
-* Password hash-ohet përsëri
-* Krahasohet me hash-in ekzistues
-
-### Show Users
-
-* Shfaq listën e userave (ID dhe username)
+*Show Users
 
 ---
 
@@ -81,12 +51,6 @@ cd user_manager_app
 ```bash
 python main.py apo py main.py
 ```
-Aplikacioni do të hapet me GUI ku mund të:
-
-* Regjistroni user të ri
-* Testoni login
-* Shihni userat
-
 ---
 
 ## Struktura e Projektit
